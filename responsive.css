@@ -1,0 +1,42 @@
+@media (max-width: 768px){
+    .head ul{
+        display: none;
+    }
+    .head{
+        padding: 15px;
+    }
+    .home_position{
+        display: block;
+    }
+    .home__title{
+        display: block;
+    }
+    .pof_title{
+        position: relative;
+        top:-500px;
+        font-size: .5rem;
+        left: 120px;
+        max-width: 50px;
+    }
+
+.pof_title li:nth-child(1){
+    font-size: 2rem;
+}
+
+.pof_title li:nth-child(2){
+    font-size: 1.5rem;
+}
+.pof_title li:nth-child(3){
+    font-size: 2rem;
+}
+.title_img{
+    position: relative;
+    top:-500px;
+    max-width: 150px;
+    height: 350px;
+    max-width: 90%;
+}
+.title_name h2{
+    font-size: 1.5rem;
+}
+}
