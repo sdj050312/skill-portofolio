@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./modal.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://unpkg.com/interactjs/dist/interact.min.js"></script>
     <script src="https://kit.fontawesome.com/b19de6d406.js"></script>
   </head>
   <body>
@@ -20,55 +20,135 @@
       <div class="show-box">
         <div class="boxs">
           <div class="box-item">
-            <div class="box-folder">
-                <span></span>
-                <div class="folder-board">
-                   
-                    <div class="folder">
-                        <p>html</p>
-                        <span></span>
-                    </div>
-                     <div class="folder">
-                        <p>css</p>
-                        <span></span>
-                    </div>
-                     <div class="folder">
-                        <p>JS</p>
-                        <span></span>
-                    </div>
-                     <h1>"Please drag to the desired position."</h1>
-                </div>
+            <div class="intro-title">
+              <h3>My skill & introtitle</h3>
+              <h1>
+                collection of skill is helpful to improve your language, so I
+                will now introduce what I have studied so far.
+              </h1>
             </div>
-            <div class="chart">
-                <ul>
-                    <li><i class="fa-brands fa-html5" id ="icon" style="color: orangered;"></i> html</li>
-                    <li>
-                        <div class = "chart-bar">
-                            <span></span>
-                        </div>
-                    </li>
-                </ul>
-                <ul>
-                    <li><i class="fa-brands fa-css3" id = "icon" style="color: rgb(0, 68, 255);"></i> CSS</li>
-                    <li>
-                        <div class = "chart-bar">
-                            <span></span>
-                        </div>
-                    </li>
-                </ul>
-                <ul>
-                    <li><i class="fa-brands fa-js" id = "icon" style="color: yellow;"></i> JS</li>
-                    <li>
-                        <div class = "chart-bar">
-                            <span></span>
-                        </div>
-                    </li>
-                </ul>
+            <div>
+              <div class="intro-exp">
+                <p>
+                  "I have been studying based on the languages I have learned so
+                  far, diligently acquiring knowledge. For those who are
+                  curious, it would be great to click on the banner below."
+                </p>
+                <div class="intro-tag">
+                  <ul class="intro-btn">
+                    <li><a href="">sdj608283243@gmail</a></li>
+                    <li><i class="fa-brands fa-google"></i></li>
+                  </ul>
+                  <ul class="intro-btn">
+                    <li><a href="">sdj050312@github.io</a></li>
+                    <li><i class="fa-brands fa-github"></i></li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="box-item"></div>
-          <div class="box-item"></div>
-          <div class="box-item"></div>
+          <div class="box-item">
+            <div class="box-folder">
+              <span></span>
+              <div class="folder-board">
+                <div class="folder">
+                  <p>html</p>
+                  <span></span>
+                </div>
+                <div class="folder">
+                  <p>css</p>
+                  <span></span>
+                </div>
+                <div class="folder">
+                  <p>JS</p>
+                  <span></span>
+                </div>
+                <h1>"Please drag to the desired position."</h1>
+              </div>
+            </div>
+            <div class="chart">
+              <ul>
+                <li>
+                  <i
+                    class="fa-brands fa-html5"
+                    id="icon"
+                    style="color: orangered"
+                  ></i>
+                  html
+                </li>
+                <li>
+                  <div class="chart-bar">
+                    <span id = "graph-bar1"></span>
+                  </div>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <i
+                    class="fa-brands fa-css3"
+                    id="icon"
+                    style="color: rgb(0, 68, 255)"
+                  ></i>CSS
+                </li>
+                <li>
+                  <div class="chart-bar">
+                    <span id = "graph-bar2"></span>
+                  </div>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <i
+                    class="fa-brands fa-js"
+                    id="icon"
+                    style="color: yellow"
+                  ></i>
+                  JS
+                </li>
+                <li>
+                  <div class="chart-bar">
+                    <span id = "graph-bar3"></span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="box-item">
+            <div class="framework-tabs">
+                <div class="card">
+                    <img src="../FMS.PNG" alt="">
+                    <div class="card-exp">
+                    <h2>REACT/JSX</h2>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-exp">
+                    <h2>Express.JS</h2>
+                    </div>
+                    <img src="../30min.PNG" alt="">
+                </div>
+                <div class="card">
+                    <img src="../clipart4204878.png" alt="">
+                   <div class="card-exp">
+                    <h2>Python</h2>
+                    <p>Studying</p>
+                    </div>
+                </div>
+                 <div class="card">
+                    <img src="./springboot.jpg" alt="">
+                     <div class="card-exp">
+                        <h2>Spring boot&Java</h2>
+                        <p>studying</p>
+                    
+                    </div>
+                 </div>
+            </div>
+            
+          </div>
+
+          <div class="box-item">
+
+          </div>
         </div>
       </div>
 
@@ -103,6 +183,7 @@
         </ul>
       </div>
     </section>
+    <script src="drag.js"></script>
     <script src="modalSlide.js"></script>
   </body>
 </html>
