@@ -7,75 +7,90 @@
     <title>Document</title>
     <link rel="stylesheet" href="./dev.css">
     <link rel="stylesheet" href="./responsive.css">
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+    <script src="https://kit.fontawesome.com/b19de6d406.js"></script>
 </head>
 
 <body>
     <header>
+        <aside>
+            <div class="menu-tabs active">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#project">Project</a></li>
+                    <li><a href="#skill">Skill</a></li>
+                    <li><a href="#mail">Contact</a></li>
+                </ul>
+            </div>
+            <div class="head-tab-menu">
+                <input type="checkbox" name="tab" id="tab">
+                <label for="tab">
+                    <span></span><span></span><span></span>
+                </label>
+            </div>
+        </aside>
         <div class="head">
             <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Resume</a></li>
-                <li><a href="">Project</a></li>
-                <li><a href="">skill</a></li>
-                <li><a href="">contact</a></li>
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#resume">Experience</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#skill">Skill</a></li>
+                <li><a href="#mail">Contact</a></li>
             </ul>
         </div>
     </header>
     <main>
         <section id="home">
-            <div class="home_position">
-                <div class="home__title">
-                    <div class="circle">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <div class="circle-2">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <div class="pof_title">
-                        <ul>
-                            <li>My Project</li>
-                            <li>Front-End-Engineer</li>
-                            <li>Web Develeoper</li>
-                        </ul>
-                        <div class="contact_btn">
-                            <button type="button">git</button>
-                            <button type="button">instargram</button>
-                            <button type="button">aa</button>
-                        </div>
-                    </div>
-                    <div class="title_pof_img">
-                        <div class="title_img">
-                            <img src="" alt="">
-                            <div class="title_name">
-                                <h2>Dong Jin Son</h2>
-                                <div class="point">
-                                    <span></span>
-                                </div>
-                            </div>
-                            <div class="title_job">
-                                <p>I want to get lot of chance to work with diver people
-                                    so, make decision to be developer
-                                </p>
-                                <p>
-                                    I would like to be Front end engineer cause I thought,
 
-                                </p>
-                            </div>
-                        </div>
+            <div class="home-circle-ani">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="botom-circle-ani">
+                <span></span><span></span><span></span>
+            </div>
+            <div class="home">
+
+                <div class="home-title">
+                    <div class="home-title-comment">
+                        <h1>FrontEnd Engineer</h1>
+                        <h3>I'm Son Dong Jin</h3>
+                        <h2>Never Give Up! Chaelleng Always</h2>
+                    </div>
+
+                    <div class="circle-ani-mini">
+                        <span></span><span></span><span></span>
+                    </div>
+                    <div class="url-content">
+                        <ul class="mail-content">
+                            <li><i class="fa-brands fa-google"></i></li>
+                            <li>sdj608283243@gmail.com</li>
+                        </ul>
+                        <ul class="mail-content">
+                            <li><i class="fa-brands fa-github"></i></li>
+                            <li>sdj050312@github.io</li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="profile-content">
+                    <div class="profile-img">
+                        <img src="" alt="">
+                    </div>
+                    <div class="my-profile">
+                        MY Profile, I always trying my best to challenge for anything and Goal
                     </div>
                 </div>
             </div>
         </section>
         <!--section resume-->
-        <section>
+        <section id="resume">
             <div class="resume">
                 <div class="tab_content">
                     <div class="content-list">
-                        <div class="content_item" id = "item01">
+                        <div class="content_item" id="item01">
                             <div class="content_img">
                                 <ul class="title_01">
                                     <li>
@@ -86,62 +101,64 @@
                                     </li>
                                 </ul>
 
-                                <img src="" alt="">
                             </div>
                             <div class="content_board">
-                                <div class="custom-shape-divider-bottom-1733416954">
+                                <div class="custom-shape-divider-bottom-1733416954" id="divider">
                                     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
                                         preserveAspectRatio="none">
                                         <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
                                     </svg>
                                 </div>
-                                <div class = "board-exp">
+                                <div class="board-exp">
                                     <ul>
                                         <li>Dalim University 2019-2024</li>
                                     </ul>
-                                   <div class = "plus-exp01">
-                                   Compared to other students, Korean men are required to fulfill their mandatory military service, which causes them to 
-                                   take a leave of absence and return to school afterward, delaying graduation. As a result, my expected graduation date is 2025 February. 
-                                   I attended a three-year technical college while working during the day and studying in the evening. Therefore,
-                                    I believe I have gained more experience than most people.
+                                    <div class="plus-exp01">
+                                        Compared to other students, Korean men are required to fulfill their mandatory
+                                        military service, which causes them to
+                                        take a leave of absence and return to school afterward, delaying graduation. As
+                                        a result, my expected graduation date is 2025 February.
+                                        I attended a three-year technical college while working during the day and
+                                        studying in the evening. Therefore,
+                                        I believe I have gained more experience than most people.
 
-                                   </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="content_item" id = "item02">
+                        <div class="content_item" id="item02">
                             <div class="content_img">
                                 <ul class="title_01">
                                     <li>
-                                        <h1>02</h1>
+                                        <h1 style="color: black;">02</h1>
                                     </li>
                                     <li>
-                                        <h2>Experience</h2>
+                                        <h2 style="color: black;">Experience</h2>
                                     </li>
                                 </ul>
                             </div>
                             <div class="content_board">
-                                <div class="custom-shape-divider-bottom-1733416954" id = "divider">
+                                <div class="custom-shape-divider-bottom-1733416954" id="divider">
                                     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
                                         preserveAspectRatio="none">
                                         <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
                                     </svg>
                                 </div>
-                                <div class = "board-exp">
+                                <div class="board-exp">
                                     <ul>
                                         <li>Mexico for Work</li>
                                         <li>Japan for Studying</li>
                                     </ul>
-                                   <div class = "plus-exp">
-                                    I have diverse experience and chance to work diverse area,<br>
-                                    From this experience, I make decision to start to be Develeoper <br>
-                                    I don't have experience for working Develeoper but,I have worked 
-                                    diverse Facility, I can say, i always ready to be work 
-                                   </div>
+                                    <div class="plus-exp">
+                                        I have diverse experience and chance to work diverse area,<br>
+                                        From this experience, I make decision to start to be Develeoper <br>
+                                        I don't have experience for working Develeoper but,I have worked
+                                        diverse Facility, I can say, i always ready to be work
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="content_item" id = "item03">
+                        <div class="content_item" id="item03">
                             <div class="content_img">
                                 <ul class="title_01">
                                     <li>
@@ -152,29 +169,29 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="content_board" >
-                                
-                                <div class="custom-shape-divider-bottom-1733416954">
+                            <div class="content_board">
+
+                                <div class="custom-shape-divider-bottom-1733416954" id="divider">
                                     <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
                                         preserveAspectRatio="none">
                                         <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
                                     </svg>
                                 </div>
-                               <div class = "board-exp">
+                                <div class="board-exp">
                                     <ul>
                                         <li>Construct-Engineer 2019-2021</li>
-                                        <li>Military Company  2021-2023</li>
+                                        <li>Military Company 2021-2023</li>
                                     </ul>
-                                   <div class = "plus-exp">
-                                    I have diverse experience and chance to work diverse area,<br>
-                                    From this experience, I make decision to start to be Develeoper <br>
-                                    I don't have experience for working Develeoper but,I have worked 
-                                    diverse Facility, I can say, i always ready to be work 
-                                   </div>
+                                    <div class="plus-exp">
+                                        I have diverse experience and chance to work diverse area,<br>
+                                        From this experience, I make decision to start to be Develeoper <br>
+                                        I don't have experience for working Develeoper but,I have worked
+                                        diverse Facility, I can say, i always ready to be work
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="content_item" id = "item_hover">
+                        <div class="content_item" id="item_hover">
                             <div class="content_img_title">
 
                                 <img src="./education.jpg" alt="">
@@ -185,7 +202,7 @@
 
                 </div>
         </section>
-        <section id="Resume">
+        <section id="project">
             <div class="project">
                 <input type="radio" name="tab_menu" id="slide1" checked>
                 <input type="radio" name="tab_menu" id="slide2">
@@ -196,65 +213,140 @@
                             <div class="slide_content_title">
                                 <div class="content_title">
                                     <div class="slide_project">
-                                        <ul class = "project_item">
-                                            <li><h1>01</h1></li>
-                                            <li><h2>30min Books title</h2></li>
+                                        <ul class="project_item" id="item1">
+                                            <li>
+                                                <h1>01</h1>
+                                            </li>
+                                            <li>
+                                                <h2>30min Books title</h2>
+                                            </li>
                                             <li>Individual Project</li>
-                                           
+
                                         </ul>
+
                                     </div>
-                                    <ul class  ="project_exp">
-                                        <li>I love reading diverse books, which is why I started a project about books.</li>
-                                       <li>I worked on this project entirely by myself because I was deeply passionate about it compared to other projects.</li>
-                                      <li>It took a lot of time, and while working on it, I regularly checked my progress through GitHub.</li>
+                                    <ul class="project_exp">
+                                        <li>I love reading diverse books, which is why I started a project about books.
+                                        </li>
+                                        <li>I worked on this project entirely by myself because I was deeply passionate
+                                            about it compared to other projects.</li>
+                                        <li>It took a lot of time, and while working on it, I regularly checked my
+                                            progress through GitHub.</li>
                                         <li>This allowed me to compare my progress day by day.</li>
-                                        <li>I also implemented the backend by connecting it to a server and utilizing MongoDB.</li>
+                                        <li>I also implemented the backend by connecting it to a server and utilizing
+                                            MongoDB.</li>
+                                    </ul>
+                                    <ul class="project-icon">
+                                        <!-- <li><i class="fa-brands fa-react"></i></li> -->
+                                        <li><i class="fa-brands fa-node-js" style="color: green;"></i></li>
+                                        <li><i class="fa-brands fa-html5" style="color: orangered;"></i></li>
+                                        <li><i class="fa-brands fa-css3-alt" style="color: blue;"></i></li>
+                                        <li><i class="fa-brands fa-js" style="color: yellow;"></i></li>
+                                        <li><i class="fa-solid fa-database" style="color: greenyellow;"></i></li>
+                                    </ul>
+                                    <ul class="project-icon-name">
+                                        <li>Exprees.js</li>
+                                        <li>Html</li>
+                                        <li>Css</li>
+                                        <li>Vanila JS</li>
+                                        <li>MongoDB</li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="slide_project_img">
-                                
+                                <img src="../30min.PNG" alt="">
                             </div>
                         </div>
                     </div>
                     <div class="slide">
-                         <div class="content_prop">
+                        <div class="content_prop">
                             <div class="slide_content_title">
                                 <div class="content_title">
                                     <div class="slide_project">
-                                        <ul class = "project_item">
-                                            <li><h1>02</h1></li>
-                                            <li><h2>30min Books title</h2></li>
+                                        <ul class="project_item" id="item2">
+                                            <li>
+                                                <h1>02</h1>
+                                            </li>
+                                            <li>
+                                                <h2>FMS Project</h2>
+                                            </li>
                                             <li>Individual Project</li>
-                                           
+
                                         </ul>
                                     </div>
+                                    <ul class="project_exp">
+                                        <li></li>
+                                        <li>I worked on this project entirely by myself because I was deeply passionate
+                                            about it compared to other projects.</li>
+                                        <li>employee. This site is a project that allows developers to track progress,
+                                            and it provides an easy</li>
+                                        <li>way to understand the workflow of each task through graphical charts.</li>
+                                        <li>
+                                            This website was built using React and Tailwind CSS. It serves as an
+                                            employee information management system that stores data for each employee.
+                                        </li>
+                                    </ul>
+                                    <ul class="project-icon">
+                                        <li><i class="fa-brands fa-react" style="color: skyblue;"></i></li>
+                                        <li><i class="fa-brands fa-css3-alt" style="color: blue;"></i></li>
 
+                                    </ul>
+                                    <ul class="project-icon-name">
+                                        <li>React.js</li>
+                                        <li>tailwind CSS</li>
+                                    </ul>
                                 </div>
                             </div>
                             <div class="slide_project_img">
-                            
+                                <img src="../FMS.PNG" alt="">
                             </div>
                         </div>
                     </div>
                     <div class="slide">
-                         <div class="content_prop">
+                        <div class="content_prop">
                             <div class="slide_content_title">
                                 <div class="content_title">
                                     <div class="slide_project">
-                                        <ul class = "project_item">
-                                            <li><h1>03</h1></li>
-                                            <li><h2>30min Books title</h2></li>
-                                            <li>Individual Project</li>
+                                        <ul class="project_item" id="item3">
+                                            <li>
+                                                <h1>03</h1>
+                                            </li>
+                                            <li>
+                                                <h2>Shoppy</h2>
+                                            </li>
+                                            <li>Team Project</li>
                                             <img src="" alt="">
                                         </ul>
+
                                     </div>
+                                    <ul class="project_exp">
+                                        <li>I created a shopping mall project using React and Firebase as the database.
+                                        </li>
+                                        <li>The website includes features such as search functionality, product
+                                            purchases, and a product detail page, with each page structured accordingly.
+                                        </li>
+                                        <li>By utilizing the Google API, administrators can log in and upload products.
+                                        </li>
+                                        <li>For regular users, logging in grants access to pages for adding products to
+                                            the cart and making purchases.</li>
+                                    </ul>
+                                    <ul class="project-icon">
+                                        <li><i class="fa-brands fa-react" style="color: skyblue;"></i></li>
+                                        <li><i class="fa-brands fa-css3-alt" style="color: blue;"></i></li>
+                                        <li><i class="fa-solid fa-database" style="color: rgb(255, 189, 47);"></i></li>
+
+                                    </ul>
+                                    <ul class="project-icon-name">
+                                        <li>React.js</li>
+                                        <li>tailwind CSS</li>
+                                        <li>FireBase data</li>
+                                    </ul>
 
                                 </div>
-                                <div class = "content_exp"></div>
+                                <div class="content_exp"></div>
                             </div>
                             <div class="slide_project_img">
-
+                                <img src="../shoppy.PNG" alt="">
                             </div>
                         </div>
                     </div>
@@ -266,11 +358,109 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section id="skill">
+            <div class="skill-section">
+                <div class="skill-project">
+                    <div class="angle" id="angle"></div>
+                    <div class="angle-right" id="angle"></div>
+                    <div class="angle-bottom-left" id="angle"></div>
+                    <div class="angle-bottom-right" id="angle"></div>
+                
+                    <div class="skill-icon-front">
+                        <ul>
+                            <li><i class="fa-brands fa-html5" style="color: orangered;"></i></li>
+                            <li><i class="fa-brands fa-js" style="color: yellow;"></i></li>
+                            <li><i class="fa-brands fa-react" style="color: skyblue;"></i></li>
+                            <li><i class="fa-brands fa-css3-alt" style="color: blue;"></i></li>
+                            <li><img src="../typescript.svg" alt=""></li>
+                        </ul>
+                        <ul>
+                            <li><i class="fa-brands fa-html5" style="color: orangered;"></i></li>
+                            <li><i class="fa-brands fa-js" style="color: yellow;"></i></li>
+                            <li><i class="fa-brands fa-react" style="color: skyblue;"></i></li>
+                            <li><i class="fa-brands fa-css3-alt" style="color: blue;"></i></li>
+                            <li><img src="../typescript.svg" alt=""></li>
+                        </ul>
+                    </div>
+                    <div class="skill-content">
+                        <h1>Skill && Study</h1>
+                        <h3>THE Skill of Experience</h3>
+                        <p>I want to be develeoper for understanding programming language, so I have study diverse
+                            language <br>
+                            If you give me the chance to work toghter, I will try my best to work developer, and make
+                            good enviroment
+                        </p>
+                        <div class="skill-btn">
+                            <s></s>
+                            <s></s>
+                            <a href="">See More</a>
+                        </div>
+                    </div>
 
+                    <div class="skill-icon-back">
+
+                        <ul>
+                            <li><i class="fa-brands fa-java" style="color: red;"></i></li>
+                            <li><i class="fa-brands fa-node-js" style="color: greenyellow;"></i></li>
+                            <li id="python"><img src="../clipart4204878.png" alt=""></li>
+                            <li><i class="fa-brands fa-java" style="color: red;"></i></li>
+                            <li><i class="fa-brands fa-node-js" style="color: greenyellow;"></i></li>
+                            <li id="python"><img src="../clipart4204878.png" alt=""></li>
+
+                        </ul>
+                        <ul>
+                            <li><i class="fa-brands fa-java" style="color: red;"></i></li>
+                            <li><i class="fa-brands fa-node-js" style="color: greenyellow;"></i></li>
+                            <li><i class="fa-brands fa-java" style="color: red;"></i></li>
+                            <li id="python"><img src="../clipart4204878.png" alt=""></li>
+                            
+                            <li><i class="fa-brands fa-node-js" style="color: greenyellow;"></i></li>
+                            <li id="python"><img src="../clipart4204878.png" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="mail">
+            <div class="send-mail">
+
+                <div class="footer-circle-ani">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="mail-container">
+                    <div class="mail-img">
+                        <img src="../30min.PNG" alt="">
+                    </div>
+                    <ul class="mails">
+                        <li>
+                            <h1>Contact</h1>
+                        </li>
+                        <li><i class="fa-solid fa-envelope"></i></li>
+                        <li>Email: sdj608283243@gmail.com</li>
+                        <li><i class="fa-brands fa-github"></i></li>
+                        <li>Git-hub: sdj050312@github.io</li>
+                       
+                    </ul>
+                </div>
+            </div>
         </section>
     </main>
-    <script src = "dev.js"></script>
+    <footer>
+        <div class="footer">
+            <div class="foot-click">
+                <a href="">Would you like to send me mail?</a>
+            </div>
+            <ul class="foot-mail">
+                <li><a href=""><i class="fa-solid fa-envelope"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-github"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="menuFix.js"></script>
+    <script src="scoll.js"></script>
+    <script src="dev.js"></script>
 </body>
 
 </html>
