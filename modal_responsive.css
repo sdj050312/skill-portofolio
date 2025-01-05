@@ -1,0 +1,95 @@
+@media (max-width: 768px) {
+    .head h1{
+        display: none;
+    }
+        .head li{
+            font-size: 1rem;
+        }
+        .boxs{
+            flex-direction: column;
+        }
+        .box-item{
+            grid-template-rows: 2fr;
+            grid-template-columns: 1fr;
+        }
+        .box-item:nth-child(1){
+            width: 100%;
+        }
+        .intro-title h3{
+            font-size: 1.3rem;
+        }
+        
+        .intro-title h1{
+            font-size: .8rem;
+        }
+        .intro-exp p{
+            width: 80%;
+            font-size: .9rem;
+        }
+        .box-item:nth-child(2){
+            border: solid 1px;
+            width: 100%;
+            grid-template-rows:  50% 50%;
+            grid-template-columns:  1fr;
+        }
+        .box-folder{
+            border: solid 1px;
+        }
+        .folder{
+            width: 50px;
+            height: 42px;
+            font-size: 1rem;
+        }
+        .chart{
+            font-size: 1rem;
+        }
+        .chart ul{
+            width: 250px;
+            margin-top: 0;
+        }
+        #icon{
+            font-size: 1.5rem;
+        }
+        #graph-bar1,#graph-bar2,#graph-bar3,#graph-bar4 {
+            border: solid 2px;
+            border-radius: 10px;
+        }
+        .chart img{
+            width: 20px;
+            height: 20px;
+        }
+        .chart-bar{
+            width: 180px;
+        }
+        .chart-bar{
+            position: sticky;
+            margin-left: 0;
+            margin-top: 3px;
+        }
+        .framework-tabs{
+           
+        }
+        .card{
+            margin-left: 0;
+            margin-right: 0;
+            width: 98px;
+            border-radius: 20px;
+            height: 60%;
+        }
+        .card-exp{
+            font-size: .8rem;
+        }
+        .box-item:nth-child(4){
+            grid-template-columns: 1fr;
+            grid-template-rows: 2fr 50% 50%;
+        }
+        .profile-img{
+            height: 150px;
+        }
+        .profile-content h1{
+            font-size: 1.3rem;
+        }
+        .profile-content{
+            font-size: .5rem;
+        }
+}
