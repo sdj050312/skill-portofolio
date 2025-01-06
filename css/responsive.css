@@ -25,13 +25,16 @@
         font-size: .8rem;
     }
     .plus-exp{
-        font-size: .8rem;
+        font-size: .7rem;
     }
     .project-icon-name li{
-        font-size: .6rem;
+        display: none;
     }
     .project-icon i{
         font-size: 1rem;
+    }
+    .project_exp li{
+        font-size: .7rem;
     }
     .slide-btn label{
         width: 90px;
@@ -68,11 +71,12 @@
         display: none;
     }
     .head-tab-menu{
-        
-      
-        padding-top: 10px;
+        top:10px;
         height: 35px;
-        width: 100%;
+        max-width: 100%;
+        min-width: 100%;
+       
+       
         z-index: 1000000;
         position: fixed;
         display: block;
@@ -81,22 +85,34 @@
     .menu-tabs.active{
         display: none;
     }
+    
     .menu-tabs{
         position: fixed;
         transition: .3s;
         z-index: 10000;
-        border: solid 1px;
-        width: 100%;
+        display: none;
+        max-width: 100%;
+        min-width: 100%;
         height: 100vh;
-        
+        min-height: 100vh;
+        top:0;
+        left: 0;
         background-color: wheat;
         opacity: 0.8;
-        top:0;
-        display: none;
         display: flex;
         align-items: center;
         justify-content: center;
     }
+    .menu-tabs ul{
+       
+        position: absolute;
+        display: flex;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
     .menu-tabs li a{
         color: black;
         font-size: 4rem;
@@ -278,21 +294,34 @@ label:nth-child(3){
 }
 #item1{
     color: black;
-    background: url(../30min.PNG);
+    background: url(../img/30min.PNG);
     background-size: 100% 100%;
 }
 #item2{
     color: black;
-    background: url(../FMS.PNG);
+    background: url(../img/FMS.PNG);
     background-size: 100% 100%;
 }
 #item3{
     color: black;
-    background: url(../shoppy.PNG);
+    background: url(../img/shoppy.PNG);
     background-size: 100% 100%;
 }
 .project-icon-name li{
-    font-size: 1rem;
+    font-size: .9rem;
+    display: block;
+}
+.project-link{
+    background-color: black;
+}
+.project-link a{
+    color: white;
+}
+.project-link:hover{
+    background-color: white;
+}
+.project-link:hover a{
+    color: black;
 }
 .project-icon i{
     font-size: 1.5rem;
@@ -355,9 +384,34 @@ label:nth-child(3){
     top:60%;
     transform: translateX(0%);
 }
+.modal-overlay{
+    height: 200vh;
+}
+.modal-overlay a{
+    font-size: 2rem;
+}
+.modal{
+      overflow-x: hidden;
+    width: 450px;
+    top:10%;
+    transform: translateX(-50%);
+    height: 80%;
+}
+.delete-modal{
+    transform: translateY(20px);
+    z-index: 1000000;
+    cursor: pointer;
+    position: absolute;
+}
 .footer-circle-ani span{
     width: 150px;
     height: 150px;
 }
 
+}
+@media (max-width : 490px) {
+    .home-title h2{
+        margin-bottom: 20px;
+        font-size: 1rem;
+    }
 }

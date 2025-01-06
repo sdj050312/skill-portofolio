@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Gowun+Batang&family=Jua&family=Kiwi+Maru:wght@300;400;500&family=Oswald:wght@200..700&display=swap');
 *{
-    margin: 0;
+    margin: 0 ;
     padding: 0;
     box-sizing: border-box;
 }
@@ -12,8 +12,7 @@
     display: none;
 }
 html{
-    
-     scroll-behavior: smooth;
+     scroll-behavior: smooth; 
 }
 .custom-shape-divider-bottom-1733416954 svg {
     position: absolute;
@@ -30,6 +29,7 @@ html{
     border: solid 1px;
 }
 body{
+    overflow-x: hidden;
    
     background-color: #121212;
     color: white;
@@ -346,14 +346,14 @@ ul, li{
 }
 #item01{
     background-size: 100% 100%;
-    background-image: url(./studying.jpg);
+    background-image: url(../img/studying.jpg);
 }
 #item02{
     background-size: 100% 100%;
-    background-image: url(./img/experience.jpg);
+    background-image: url(../img/experience.jpg);
 }
 #item03{
-    background-image: url(./work.jpg);
+    background-image: url(../img/work.jpg);
     background-size: 100% 100%;
 }
 .content_board{
@@ -457,6 +457,77 @@ ul, li{
 }
 .project_item h1{
     font-size: 5rem;
+}
+.project-link{
+    margin-top: 5px;
+    padding: 5px;
+    width: 70px;
+     transition: .3s;
+    
+    background-color: white;
+    position: relative;
+}
+
+.project-link s:nth-child(1)::before{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    transition: .3s;
+    top:0;
+    left: 0;
+    background-color: crimson;
+}
+.project-link s:nth-child(1)::after{
+    content: '';
+    position: absolute;
+    transition: .3s;
+    top:0;
+    background-color: crimson;
+    width: 2px;
+    height: 10px;
+    left: 0;
+}
+
+.project-link s:nth-child(2)::before{
+    content: '';
+    position: absolute;
+    transition: .3s;
+    width: 10px;
+    height: 2px;
+    bottom:0;
+    right: 0;
+   background-color: crimson;
+}
+.project-link s:nth-child(2)::after{
+    content: '';
+    transition: .3s;
+    position: absolute;
+    bottom:0;
+    background-color: crimson;
+    width: 2px;
+    height: 10px;
+    right: 0;
+}
+.project-link:hover s:nth-child(1)::before,
+.project-link:hover s:nth-child(2)::before
+{
+    width: 100%;
+}
+.project-link:hover s:nth-child(1)::after,
+.project-link:hover s:nth-child(2)::after
+{
+    height: 100%;
+}
+.project-link:hover{
+    background-color: black;
+}
+.project-link:hover a{
+    color: white;
+}
+
+.project-link a{
+    color: black;
 }
 
 .slide-wrap{
@@ -717,6 +788,7 @@ input[id= "slide3"]:checked ~ .slide-btn label[for = "slide3"]{
     padding: 1%;
     border-radius: 10px;
 }
+
 .skill-btn {
     margin-top: 10px;
     border: solid 1px;
@@ -863,6 +935,46 @@ input[id= "slide3"]:checked ~ .slide-btn label[for = "slide3"]{
 .skill-icon-back{
     font-size: 2rem;
 }
+.modal-overlay.show{
+    display: block;
+    z-index: 100;
+}
+
+.modal-overlay{
+    border: solid 1px;
+    position: fixed;
+    width: 100%;
+    top:0;
+    z-index: 0;
+    left: 0;
+    display: none;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.637) ;
+
+}
+.modal-overlay a {
+    position: absolute;
+    top:10px;
+    z-index: 100;
+    font-size: 5rem;
+    left: 20px;
+}
+.modal{
+    overflow-x: hidden;
+     scroll-behavior: smooth;
+    top:10%;
+    left: 50%;
+    transform: translateX(-50%);
+    position: fixed;
+    width: 1280px;
+    z-index: 100;
+    height: 80%;
+    width: 80%;
+    border: solid 1px;
+    
+}
+
+
 /*mail part*/
 .send-mail{
     display: flex;

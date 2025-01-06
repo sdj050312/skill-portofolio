@@ -25,7 +25,7 @@ function PrevSlide() {
     slideWrap.style.transform = `translateX(${current * -200}px)`;
   } else {
     current = 0;
-    slideWrap.style.transform = `translateX(200px)`;
+    slideWrap.style.transform = `translateX(300px)`;
   }
 }
 console.log(prevBtn);
