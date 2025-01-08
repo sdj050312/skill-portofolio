@@ -1,6 +1,6 @@
 const sections = document.querySelectorAll('section');
 const headLinks = document.querySelectorAll('.head a');
-
+const projectSection = document.querySelector('.project');
 const Section = {
     home: '#home', 
     resume: '#resume',
@@ -8,7 +8,7 @@ const Section = {
     skill: '#skill',
     mail: '#mail',
     root: sections,
-    threshold: 0.6,
+    threshold: 0.4,
 };
 
 const headEffect = (entries) => {
@@ -19,12 +19,16 @@ const headEffect = (entries) => {
             link.classList.add('active');
             if (entry.target.id === 'project') {
                 headLinks.forEach(link => {
-                    link.style.color = 'black'; // project 섹션에 들어오면 색상 변경
+                    link.style.color = 'black';
+                    projectSection.classList.add('active');
+                    // project 섹션에 들어오면 색상 변경
                 });
+           
             } else {
                 headLinks.forEach(link => {
                     link.style.color = ''; // 다른 섹션일 때 색상 초기화
                 });
+                projectSection.classList.remove('active');
             }
         } else {
             link.classList.remove('active');
@@ -35,7 +39,7 @@ const headEffect = (entries) => {
 
 const observer = new IntersectionObserver(headEffect, {
     root: null,
-    rootMargin: '0px',
+    rootMargin: '0px 0px -10% 0px',
     threshold: Section.threshold
 });
 
