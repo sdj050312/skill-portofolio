@@ -426,7 +426,12 @@ background: linear-gradient(191deg, rgba(217, 235, 182, 0.222) 23%, rgba(160, 21
     border: solid 5px black;
 }
 .profile-img{
+    object-fit: cover;
     border: solid 1px;
+}
+.profile-img img{
+    width: 100%;
+    height: 100%;
 }
 .profile-content{
     display: flex;

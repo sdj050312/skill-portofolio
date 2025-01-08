@@ -90,7 +90,7 @@ ul, li{
     
     justify-content: center;
     grid-template-rows: 1fr;
-    grid-template-columns: 500px 600px;
+    grid-template-columns: 500px 300px;
 }
 .home-title{
     display: flex;
@@ -138,13 +138,13 @@ ul, li{
     animation: circleAni 10s infinite linear;
     animation-duration: 20s; 
     
-    background-color: rgb(59, 9, 56);
+    background-color: rgb(156, 60, 149);
     
 }
 .botom-circle-ani span:nth-child(1){
     rotate: 30deg;
     animation: reverse;
-    opacity: 0.5;
+    opacity: 0.7;
 }
 
 .botom-circle-ani span:nth-child(2){
@@ -255,16 +255,25 @@ ul, li{
 .profile-img{
     height: 90%;
     width: 100%;
-    border: solid 1px;
+    z-index: 10;
+    border-radius: 30% 50% 60% 40%;
+    object-fit: cover;
+    overflow: hidden;
+  
+}
+.profile-img img{
+    width: 100%;
+    height: 100%;
 }
 .my-profile{
+    z-index: 10;
     margin-top: 10px;
     border: solid 1px;
     background-color: white;
     color: black;
     width: 100%;
     padding: 1%;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 @keyframes circleAni {
@@ -385,10 +394,10 @@ ul, li{
 }
 .content_img_title{
     width: 100%;
+    object-fit: cover;
     height: 100%;
 }
 .content_img_title img{
-    object-fit: cover;
     width: 100%;
     height: 100%;
 }
