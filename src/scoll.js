@@ -8,7 +8,7 @@ const Section = {
     skill: '#skill',
     mail: '#mail',
     root: sections,
-    threshold: 0.4,
+    threshold: 0.5,
 };
 
 const headEffect = (entries) => {
