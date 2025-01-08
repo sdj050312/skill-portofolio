@@ -1,6 +1,9 @@
 .project.active{
     animation: top 3s linear ;
 }
+.send-mail.active{
+    animation: top 3s linear ;
+}
 @keyframes top{
     100%{
         opacity: 1;

@@ -275,12 +275,12 @@ a{
     
 }
 .chart-bar{
-    margin-left: 10px;
-    width: 500px;
+   
+    width: 280px;
     height: 40px;
     background-color: rgb(31, 30, 30);
     border-radius: 10px;
-    padding: 5px;
+  
     top:10px;
     display: flex;
     align-items: center;
@@ -288,6 +288,10 @@ a{
     position: relative;
     border: solid 2px rgb(105, 103, 103);
 }
+.chart-bar span:nth-child(1){
+    z-index: 1;
+}
+
 #graph-bar1{
     width: 80%;
 background: rgb(246,78,24);
@@ -298,6 +302,7 @@ background: linear-gradient(191deg, rgba(246,78,24,1) 23%, rgba(251,211,177,1) 1
 background: linear-gradient(191deg, rgba(24,120,246,1) 23%, rgba(177,233,251,1) 100%);
 }
 #graph-bar3{
+
     width: 75%;
     background: rgb(246,189,24);
 background: linear-gradient(191deg, rgba(246,189,24,1) 23%, rgba(251,247,177,1) 100%);
@@ -424,10 +429,36 @@ background: linear-gradient(191deg, rgba(217, 235, 182, 0.222) 23%, rgba(160, 21
 }
 .box-item:nth-child(4){
     border: solid 5px black;
+    overflow: auto;
+    overflow-x: hidden;
 }
+.box-item:nth-child(4)::-webkit-scrollbar{
+    background-color: rgb(46, 46, 46);
+    width: 12px;  /* 세로 스크롤바의 너비 */
+  height: 22px
+}
+.box-item:nth-child(4)::-webkit-scrollbar-track{
+   background: #998282;  /* 배경 색상 */
+  border-radius: 10px;
+  padding: 1px;
+}
+.box-item:nth-child(4)::-webkit-scrollbar-thumb {
+  background: #6b1a39; /* thumb의 색상 */
+  border-radius: 10px;
+  transition: .3s;
+}
+.box-item:nth-child(4)::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(253, 161, 180);
+  transition: .3s;
+}
+
 .profile-img{
     object-fit: cover;
-    border: solid 1px;
+       height: 100%;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+
 }
 .profile-img img{
     width: 100%;
@@ -439,6 +470,7 @@ background: linear-gradient(191deg, rgba(217, 235, 182, 0.222) 23%, rgba(160, 21
     justify-content: center;
     flex-direction: column;
     color: black;
+
     background-color: rgb(199, 195, 195);
 }
 .profile-content h1{
