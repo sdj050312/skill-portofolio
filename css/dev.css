@@ -322,15 +322,12 @@ ul, li{
 }
 .content-list{
     display: flex;
-  
     justify-content: center;
     align-items: center;
-
     width: 100%;
 }
 .content-list div{
     width: 100%;
-    
     height: 690px;
     
 }
@@ -479,7 +476,26 @@ ul, li{
     background-color: white;
     position: relative;
 }
-
+.project-detail{
+    margin-top: 10px;
+    padding: 5px;
+    position: relative;
+    background-color: rgb(51, 49, 49);
+    color: black;
+    transition: .2s;
+ 
+}
+.project-detail a{
+   
+    color: rgb(244, 132, 154);
+}
+.project-detail:hover{
+    background-color: red;
+    
+}
+.project-detail:hover a{
+    color: black;
+}
 .project-link s:nth-child(1)::before{
     content: '';
     position: absolute;
@@ -641,6 +657,45 @@ input[id= "slide3"]:checked ~ .slide-btn label[for = "slide3"]{
 .slide_project_img img{
     width: 100%;
     height: 100%;
+}
+.detail-box01{
+    border: solid 1px;
+    position: fixed;
+    top:0;
+    left: 0;
+    display: none;
+    width: 100%;
+    
+    background: rgb(0, 0, 0, 0.8);
+    height: 100vh;
+}
+.detail-box01.active{
+    opacity: 1;
+    position: fixed;
+    z-index: 10;
+    display: block;
+    z-index: 1000000000;   
+}
+.detail-project{
+    width: 80%;
+    position: absolute;
+    height: 300px;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: solid 1px;
+}
+.detail-project-box {
+    border: solid 1px;
+    position: absolute;
+    width: 80%;
+    height: 80%;
+}
+.cancle-btn{
+    position: absolute;
+    top:10px;
+    left: 10px;
+    font-size: 2rem;
 }
 /*skill-section*/
 .skill-section{
