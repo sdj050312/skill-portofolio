@@ -659,7 +659,7 @@ input[id= "slide3"]:checked ~ .slide-btn label[for = "slide3"]{
     height: 100%;
 }
 .detail-box{
-    border: solid 1px;
+    
     position: fixed;
     top:0;
     left: 0;
@@ -701,7 +701,7 @@ input[id= "slide3"]:checked ~ .slide-btn label[for = "slide3"]{
     position: absolute;
 }
 .detail-project-box {
-    border: solid 1px;
+    
     position: absolute;
     width: 80%;
     height: 80%;
@@ -712,6 +712,8 @@ input[id= "slide3"]:checked ~ .slide-btn label[for = "slide3"]{
     left: 10px;
     font-size: 2rem;
 }
+/*next js project*/
+
 /*skill-section*/
 .skill-section{
     
