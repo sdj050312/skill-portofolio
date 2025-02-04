@@ -1057,6 +1057,9 @@ input[id= "slide3"]:checked ~ .slide-btn label[for = "slide3"]{
     border: solid 1px;
     
 }
+#three-project-btn{
+    transform: translateX(-35%);
+}
 .project-btns{
 bottom:5%;
 height: 30px;
