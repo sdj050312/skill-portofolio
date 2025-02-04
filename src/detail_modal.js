@@ -1,22 +1,20 @@
-
-//객체를 생성을 하고 -> 해당 객체를 하나 씩 접근 하면 될 거 같은데 
-// 그리고 해당 객체에 있을때는 해당 버튼을 클릭을 하면 보여주는 식으로 
 const projectImgsFirst = document.querySelectorAll('.detail-project img');
 const projectBtns = document.querySelectorAll(".project-btns span");
 
 // 모든 이미지 숨기기
 function hideAllProjects() {
-    projectImgsFirst.forEach(img => img.style.opacity = '0');
+    projectImgsFirst.forEach(img => img.classList.remove('active'));
     projectBtns.forEach(btn => btn.style.opacity = '0.5'); // 비활성화 표시
 }
 
 // 특정 이미지 표시
 function showProject(index) {
-    hideAllProjects(); // 모든 이미지를 숨긴 후
-
+    hideAllProjects();
+    
     if (projectImgsFirst[index]) {
-        projectImgsFirst[index].style.opacity = '1'; // 선택된 이미지 표시
+        projectImgsFirst[index].classList.add('active'); // 선택된 이미지 표시
     }
+    
     if (projectBtns[index]) {
         projectBtns[index].style.opacity = '1';
         projectBtns[index].style.background = "gray"; // 선택된 버튼 강조
@@ -25,40 +23,47 @@ function showProject(index) {
 
 // 버튼 클릭 이벤트 추가
 projectBtns.forEach((btn, index) => {
-    btn.addEventListener("click", () => showProject(index));
+    btn.addEventListener("click", () => {
+        showProject(index);
+    });
 });
 
-// 초기 상태: 첫 번째 이미지 표시
-showProject(0);
+// 모달 관련 코드
+const modalBoxBtn = document.querySelectorAll(".project-detail");
+const detailBox = document.querySelectorAll(".detail-box");
+const cancleBtn = document.querySelectorAll('.cancle-btn');
 
+// 모달 열기 함수
+const showDetail = (index) => {
+    detailBox.forEach((box, i) => {
+        if (i === index) {
+            box.classList.add("active");
+        } else {
+            box.classList.remove("active");
+        }
+    });
 
-
-const modalBoxBtn = document.querySelector(".project-detail");
-const detailBox = document.querySelector(".detail-box01");
-const cancleBtn = document.querySelector('.cancle-btn');
-const showDetail = () => {
-    if (detailBox) {
-        detailBox.classList.add("active"); // .을 빼고 추가
-    }
+    // 모달이 열릴 때 첫 번째 이미지를 표시
+  
 };
 
+// 모달 닫기 함수
 const DeleteDetail = () => {
-    detailBox.classList.remove("active");
-}
+    detailBox.forEach(box => box.classList.remove("active"));
+};
 
-function detailImgs () {
-    
-}
+// 버튼 클릭 시 해당 모달 열기
+modalBoxBtn.forEach((btn, index) => {
+    btn.addEventListener("click", () => {
+        showDetail(index);
+        console.log(`모달 ${index}번이 열렸습니다.`);
+    });
+});
 
+// 닫기 버튼 클릭 시 모든 모달 닫기
+cancleBtn.forEach(btn => {
+    btn.addEventListener("click", DeleteDetail);
+});
 
-// 페이지를 생성을 해야하는거지.. 
-// 그래서 createElement를 하면 되는건가...?
-
-
-
-modalBoxBtn.addEventListener("click", showDetail);
-cancleBtn.addEventListener("click", DeleteDetail );
-
-
-console.log(modalBoxBtn);
-console.log(showDetail);
+console.log("모달 버튼:", modalBoxBtn);
+console.log("모달 박스:", detailBox);
