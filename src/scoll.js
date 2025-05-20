@@ -8,6 +8,7 @@ const Section = {
   resume: "#resume",
   project: "#project",
   skill: "#skill",
+  effort: "#effort",
   mail: "#mail",
   root: sections,
   threshold: 0.5,

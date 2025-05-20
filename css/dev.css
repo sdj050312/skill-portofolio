@@ -1000,7 +1000,7 @@ input[id="slide3"]:checked ~ .slide-btn label[for="slide3"] {
   font-size: 4rem;
 }
 .effort-board p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 .effort-board {
   margin: 1%;
@@ -1035,7 +1035,7 @@ input[id="slide3"]:checked ~ .slide-btn label[for="slide3"] {
   font-size: 4rem;
 }
 .effort-board-01 p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 
 .effort-board-01 {
@@ -1061,7 +1061,7 @@ input[id="slide3"]:checked ~ .slide-btn label[for="slide3"] {
   font-size: 4rem;
 }
 .effort-board-02 p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 .effort-board-02 {
   margin: 1%;
@@ -1085,7 +1085,7 @@ input[id="slide3"]:checked ~ .slide-btn label[for="slide3"] {
   font-size: 4rem;
 }
 .effort-board-03 p {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 .effort-board-03 {
   margin: 1%;
